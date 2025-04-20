@@ -1,73 +1,10 @@
-export default function ArshBiryaniHouse() {
-  return (
-    <div style={{ minHeight: '100vh', backgroundColor: '#fffbe6', color: '#333' }}>
-      <header style={{ backgroundColor: '#b91c1c', color: 'white', padding: '1.5rem', textAlign: 'center' }}>
-        <h1 style={{ fontSize: '2rem', fontWeight: 'bold' }}>Arsh Biryani House</h1>
-        <p>Authentic Flavors, Unforgettable Taste</p>
-      </header>
+export default function ArshBiryaniHouse() { return ( 
 
-      <main style={{ padding: '2rem' }}>
-        <section style={{ textAlign: 'center', marginBottom: '2rem' }}>
-          <h2>Welcome to Arsh Biryani House</h2>
-          <p>
-            We bring the rich, aromatic flavors of traditional biryani to your plate.
-            Crafted with passion and the finest ingredients.
-          </p>
-        </section>
+Arsh Biryani House 
 
-        <section style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', justifyContent: 'center', marginBottom: '2rem' }}>
-          {[
-            { name: 'Chicken Biryani', desc: 'Tender chicken with aromatic rice.', img: 'chicken-biryani.jpg' },
-            { name: 'Mutton Biryani', desc: 'Slow-cooked mutton with saffron rice.', img: 'mutton-biryani.jpg' },
-            { name: 'Veg Biryani', desc: 'Fresh vegetables with traditional spices.', img: 'veg-biryani.jpg' },
-          ].map((item) => (
-            <div key={item.name} style={{ background: 'white', padding: '1rem', borderRadius: '1rem', width: '250px', boxShadow: '0 2px 6px rgba(0,0,0,0.1)' }}>
-              <img src={`/${item.img}`} alt={item.name} style={{ width: '100%', borderRadius: '0.5rem' }} />
-              <h3 style={{ fontWeight: 'bold', marginTop: '0.5rem' }}>{item.name}</h3>
-              <p>{item.desc}</p>
-            </div>
-          ))}
-        </section>
+Authentic Flavors, Unforgettable Taste
 
-        <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
-          <button style={{ backgroundColor: '#b91c1c', color: 'white', padding: '0.75rem 1.5rem', borderRadius: '2rem' }}>
-            Order Now
-          </button>
-        </div>
+<main className="container mx-auto px-4 py-10"> <section className="text-center mb-16"> <h2 className="text-2xl font-semibold mb-4">Welcome to Arsh Biryani House</h2> <p className="max-w-xl mx-auto"> At Arsh Biryani House, we bring the rich, aromatic flavors of traditional biryani to your plate. Crafted with passion and the finest ingredients, every bite is a celebration. </p> </section> <section className="grid md:grid-cols-3 gap-8 mb-16"> <div className="bg-white rounded-2xl shadow-lg p-6 text-center"> <img src="/images/chicken-biryani.jpg" alt="Chicken Biryani" className="w-full h-48 object-cover rounded-xl mb-4" /> <h3 className="text-xl font-bold mb-2">Chicken Biryani</h3> <p>Spicy, flavorful, and cooked to perfection with tender chicken and fragrant basmati rice.</p> </div> <div className="bg-white rounded-2xl shadow-lg p-6 text-center"> <img src="/images/mutton-biryani.jpg" alt="Mutton Biryani" className="w-full h-48 object-cover rounded-xl mb-4" /> <h3 className="text-xl font-bold mb-2">Mutton Biryani</h3> <p>Slow-cooked mutton layered with saffron rice, rich in taste and tradition.</p> </div> <div className="bg-white rounded-2xl shadow-lg p-6 text-center"> <img src="/images/veg-biryani.jpg" alt="Veg Biryani" className="w-full h-48 object-cover rounded-xl mb-4" /> <h3 className="text-xl font-bold mb-2">Veg Biryani</h3> <p>A delicious vegetarian option packed with garden-fresh vegetables and aromatic spices.</p> </div> </section> <section className="text-center mb-16"> <button className="bg-red-600 text-white px-6 py-3 rounded-full text-lg hover:bg-red-700 transition">Order Now</button> </section> <section className="mb-16"> <h2 className="text-2xl font-semibold text-center mb-4">Customer Reviews</h2> <div className="grid md:grid-cols-2 gap-6"> <div className="bg-white rounded-xl shadow p-4"> <p>"The best biryani I’ve ever tasted! Highly recommend the mutton version."</p> <p className="mt-2 text-sm text-gray-500">- Fatima K.</p> </div> <div className="bg-white rounded-xl shadow p-4"> <p>"Flavorful, authentic, and super filling. Arsh Biryani House never disappoints."</p> <p className="mt-2 text-sm text-gray-500">- Ayaan R.</p> </div> </div> </section> <section className="mb-16 text-center"> <h2 className="text-2xl font-semibold mb-4">Visit Us</h2> <p>123 Biryani Street, Food City, FC 45678</p> <div className="mt-4"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.092369889994!2d-122.42067908468099!3d37.778519579757176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808b8f6e8f7b%3A0x8f6f8f8f8f8f8f8f!2sBiryani%20Place!5e0!3m2!1sen!2sus!4v1615988467357!5m2!1sen!2sus" width="100%" height="300" allowFullScreen="" loading="lazy" className="rounded-xl border-2 border-red-200" ></iframe> </div> </section> </main> <footer className="bg-red-600 text-white py-6 text-center"> <p>&copy; 2025 Arsh Biryani House. All rights reserved.</p> <p>Contact us: info@arshbiryani.com | +123-456-7890</p> </footer> </div> 
 
-        <section style={{ textAlign: 'center', marginBottom: '2rem' }}>
-          <h2>Customer Reviews</h2>
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem', marginTop: '1rem' }}>
-            <div style={{ background: 'white', padding: '1rem', borderRadius: '1rem', width: '300px' }}>
-              <p>\"The best biryani I’ve ever tasted! Highly recommend the mutton version.\"</p>
-              <small>- Fatima K.</small>
-            </div>
-            <div style={{ background: 'white', padding: '1rem', borderRadius: '1rem', width: '300px' }}>
-              <p>\"Flavorful, authentic, and super filling. Arsh Biryani House never disappoints.\"</p>
-              <small>- Ayaan R.</small>
-            </div>
-          </div>
-        </section>
+); }
 
-        <section style={{ textAlign: 'center', marginBottom: '2rem' }}>
-          <h2>Visit Us</h2>
-          <p>123 Biryani Street, Food City, FC 45678</p>
-          <iframe
-            title=\"Map\"
-            src=\"https://www.google.com/maps/embed?...\" // replace with your real embed URL
-            width=\"100%\"
-            height=\"300\"
-            style={{ border: '0', marginTop: '1rem', borderRadius: '1rem' }}
-            allowFullScreen=""
-            loading="lazy"
-          ></iframe>
-        </section>
-      </main>
-
-      <footer style={{ backgroundColor: '#b91c1c', color: 'white', textAlign: 'center', padding: '1rem' }}>
-        <p>&copy; 2025 Arsh Biryani House. All rights reserved.</p>
-        <p>Contact: info@arshbiryani.com | +123-456-7890</p>
-      </footer>
-    </div>
-  );
-}
